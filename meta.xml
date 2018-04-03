@@ -1,0 +1,64 @@
+<meta>
+    <info type="script" name="UPM Gears" author="carboned4" version="2.1" description="" />
+    <script src="lists.lua" type="client" />
+    <script src="sets.lua" type="client" />
+    <script src="xml.lua" type="client" />
+    <script src="sounds.lua" type="client" />
+    <script src="savelocal.lua" type="client" />
+	<script src="client.lua" type="client" />
+    <script src="server.lua" type="server" />
+	<script src="helpcontrols.lua" type="client" />
+	<config src="help.xml" type="client"/>
+    
+	<file src="speedobg.png" type="client" />
+    <file src="barobg.png" type="client" />
+    <file src="redlinefull.png" type="client" />
+    <file src="redlinehalf.png" type="client" />
+    <file src="testfull.png" type="client" />
+    <file src="testhalf.png" type="client" />
+    <file src="vehicles.xml" type="client" />
+    
+	<file src="turboSpool.wav" type="client" />
+    <file src="BlowOff1.wav" type="client" />
+    <file src="BlowOff2.wav" type="client" />
+    <file src="starter.ogg" type="client" />
+    <file src="backfire.wav" type="client" />
+    <file src="v10viper.ogg" type="client" />
+    <file src="v12lambo.wav" type="client" />
+    <file src="v8trash.wav" type="client" />
+    <file src="v12nfs.ogg" type="client" />
+    <file src="v8audi.ogg" type="client" />
+    <file src="v12f1.ogg" type="client" />
+    <file src="v10carrera.ogg" type="client" />
+	<file src="f6porsche.ogg" type="client" />
+	<file src="i4slow.ogg" type="client" />
+	<file src="i6bmw.ogg" type="client" />
+	<file src="i6straight.ogg" type="client" />
+	<file src="v6slow.ogg" type="client" />
+	<file src="v6fast.wav" type="client" />
+	<file src="v6slow2.ogg" type="client" />
+	<file src="v8amg.wav" type="client" />
+	<file src="v8burble.wav" type="client" />
+	<file src="v8slow.ogg" type="client" />
+	<file src="v8slow2.ogg" type="client" />
+	<file src="v8u2.ogg" type="client" />
+	<file src="v8old.ogg" type="client" />
+	<file src="v8ferrari.wav" type="client" />
+	<file src="v12old.ogg" type="client" />
+	<file src="truck.ogg" type="client" />
+	<file src="bikefast.ogg" type="client" />
+	<file src="rotary.wav" type="client" />
+	<file src="rotary.ogg" type="client" />
+	<file src="b4subaru.ogg" type="client" />
+	<file src="dirtbike.ogg" type="client" />
+	<file src="i6skyline.ogg" type="client" />
+	<file src="i6skyline2.ogg" type="client" />
+	<file src="EngineFast.ogg" type="client" />
+	<file src="EngineMid.ogg" type="client" />
+	<file src="EngineLow.ogg" type="client" />
+	<file src="EngineHigh.wav" type="client" />
+	<file src="EngineFast.wav" type="client" />
+	<file src="EngineMid.wav" type="client" />
+	<file src="EngineLow.wav" type="client" />
+	
+</meta>

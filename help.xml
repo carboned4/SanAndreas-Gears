@@ -1,0 +1,16 @@
+<help popup="no">
+You can use manual or automatic transmission in your car.
+
+To enable manual transmission, use /gearsmanual. To enable automatic transmission, use /gearsauto.
+
+Automatic gears are easier to use. Manual gears give you more control over the car's speed.
+
+Default key to Shift Up:   ,   (comma)
+
+Default key to Shift Down:   .   (period)
+
+You can redefine these binds in your Settings (Binds > Multiplayer Controls), on "shiftup" and "shiftdown". You can also set them 
+to gamepad buttons.
+
+You can go back to the normal MTA/GTA handling by disabling the gears with /gearsoff.
+</help>
