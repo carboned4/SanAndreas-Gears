@@ -43,6 +43,9 @@
 	<file src="v8slow2.ogg" type="client" />
 	<file src="v8u2.ogg" type="client" />
 	<file src="v8old.ogg" type="client" />
+	<file src="v8old2.wav" type="client" />
+	<file src="v8old3.wav" type="client" />
+	<file src="v8old4.wav" type="client" />
 	<file src="v8ferrari.wav" type="client" />
 	<file src="v12old.ogg" type="client" />
 	<file src="truck.ogg" type="client" />
@@ -53,6 +56,7 @@
 	<file src="dirtbike.ogg" type="client" />
 	<file src="i6skyline.ogg" type="client" />
 	<file src="i6skyline2.ogg" type="client" />
+	<file src="i4loud.ogg" type="client" />
 	<file src="EngineFast.ogg" type="client" />
 	<file src="EngineMid.ogg" type="client" />
 	<file src="EngineLow.ogg" type="client" />
