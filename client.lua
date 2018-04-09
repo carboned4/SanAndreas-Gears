@@ -31,6 +31,7 @@ turboSound = false
 local blowOffSound
 local backfireSound
 local starterSound
+local echoOn = false
 
 -- CAR DEPENDENT
 --local revLimit = 8000 -- v12lambo, v10carrera, v12nfs, i6straight, v8ferrari, i6skyline
@@ -334,6 +335,21 @@ function updateStuff(delta)
 			setSoundSpeed (engineSound, soundspeed/soundBase) -- test
 			
 			setSoundVolume(engineSound, soundVolume+math.sqrt(currentAccelerateState)*soundVolume)
+			
+			if checkTunnel(currentVehicle) then
+				if not echoOn then
+					setSoundEffectEnabled(engineSound,"reverb",true)
+					echoOn = true
+					outputChatBox("ceil")
+				end
+				setSoundVolume(engineSound, 2*(soundVolume+math.sqrt(currentAccelerateState)*soundVolume))
+			else
+				if echoOn then
+					setSoundEffectEnabled(engineSound,"reverb",false)
+					echoOn = false
+					outputChatBox("no ceil")
+				end
+			end
 			--setSoundVolume(turboSound, (velratio-0.6)*4)
 			if hasTurbo == 1 then
 				setSoundVolume(turboSound, spool*0.4)
@@ -655,3 +671,9 @@ function getMatrixForward(m)
     return m[2][1], m[2][2], m[2][3]
 end
 
+function checkTunnel(vehToCheck)
+	local vtcX, vtcY, vtcZ = getElementPosition(vehToCheck)
+	--																			 build vehs   peds   objs   dumms  seeth  ignore
+	local hitCeiling = isLineOfSightClear(vtcX, vtcY, vtcZ, vtcX, vtcY, vtcZ+10, true, false, false, false, false, false, false)
+	return not hitCeiling
+end
