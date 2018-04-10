@@ -118,7 +118,7 @@
 			<inertia gear="10" value="600"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="404" name="peren" type="car" soundname="v8slow2.ogg" revlimit="6000" soundbase="4000" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="404" name="peren" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="80"/>
@@ -988,7 +988,7 @@
 			<inertia gear="10" value="600"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="434" name="hotknife" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="1" turboboostfactor="0" exhaustnumber="2">
+	<vehicle id="434" name="hotknife" type="car" soundname="v8old3.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="1" turboboostfactor="0" exhaustnumber="2">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -3958,7 +3958,7 @@
 			<inertia gear="10" value="600"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="545" name="hustler" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="545" name="hustler" type="car" soundname="v8old3.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -4626,8 +4626,8 @@
 	</vehicle>
 	<vehicle id="572" name="mower" type="car" soundname="v8slow.ogg" revlimit="5500" soundbase="2500" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="1" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
-			<speed gear="0" value="80"/>
-			<speed gear="1" value="50"/>
+			<speed gear="0" value="60"/>
+			<speed gear="1" value="60"/>
 			<speed gear="2" value="80"/>
 			<speed gear="3" value="120"/>
 			<speed gear="4" value="160"/>
@@ -4856,7 +4856,7 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="580" name="stafford" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="580" name="stafford" type="car" soundname="v8old3.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>

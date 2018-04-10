@@ -104,6 +104,7 @@ function shiftUp(commandName)
 	currentGear = math.min(currentGear+1,numberGears)
 	changeGear ( "changegear", currentGear )
 	offGear = true
+	offGearCounter = 1
 	if (velratio > 0.1 and currentGear >= 1) then
 		offGearIncrement = (velratio - velratio*speeds[currentGear-1]/speeds[currentGear])
 		if currentGear == 1 then
@@ -112,7 +113,6 @@ function shiftUp(commandName)
 	else
 		offGearIncrement = 0
 	end
-	offGearCounter = 1
 end
 addCommandHandler ( "shiftup", shiftUp )
 
@@ -342,7 +342,7 @@ function updateStuff(delta)
 					echoOn = true
 					outputChatBox("ceil")
 				end
-				setSoundVolume(engineSound, 2*(soundVolume+math.sqrt(currentAccelerateState)*soundVolume))
+				setSoundVolume(engineSound, soundVolume+2*math.sqrt(currentAccelerateState)*soundVolume)
 			else
 				if echoOn then
 					setSoundEffectEnabled(engineSound,"reverb",false)
@@ -674,6 +674,6 @@ end
 function checkTunnel(vehToCheck)
 	local vtcX, vtcY, vtcZ = getElementPosition(vehToCheck)
 	--																			 build vehs   peds   objs   dumms  seeth  ignore
-	local hitCeiling = isLineOfSightClear(vtcX, vtcY, vtcZ, vtcX, vtcY, vtcZ+10, true, false, false, false, false, false, false)
+	local hitCeiling = isLineOfSightClear(vtcX, vtcY, vtcZ+1, vtcX, vtcY, vtcZ+10, true, false, false, false, false, false, false)
 	return not hitCeiling
 end
