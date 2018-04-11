@@ -225,6 +225,7 @@ function updateStuff(delta)
 			currentAccelerateState = 0
 			currentBrakeState = 0
 			currentGear = getElementData(currentVehicle,"upmCurrentGear")
+			if not currentGear then currentGear = 1 end
 		end
 		
 		vel = getCarVelocity(currentVehicle)
