@@ -228,6 +228,9 @@ function updateStuff(delta)
 			if not currentGear then currentGear = 1 end
 		end
 		
+		-- ackx, acky, ackz = getVehicleComponentRotation(currentVehicle, "wheel_rb_dummy")
+		-- outputChatBox(tostring(math.floor(ackx+0.5)))
+		
 		vel = getCarVelocity(currentVehicle)
 		velratio = math.min(vel/(speeds[currentGear]),1.05)
 		velratio = math.max(velratio,0.1)
@@ -337,20 +340,21 @@ function updateStuff(delta)
 			
 			setSoundVolume(engineSound, soundVolume+math.sqrt(currentAccelerateState)*soundVolume)
 			
-			if checkTunnel(currentVehicle) then
-				if not echoOn then
-					setSoundEffectEnabled(engineSound,"reverb",true)
-					echoOn = true
-					outputChatBox("ceil")
-				end
-				setSoundVolume(engineSound, soundVolume+2*math.sqrt(currentAccelerateState)*soundVolume)
-			else
-				if echoOn then
-					setSoundEffectEnabled(engineSound,"reverb",false)
-					echoOn = false
-					outputChatBox("no ceil")
-				end
-			end
+			-- if checkTunnel(currentVehicle) then
+				-- if not echoOn then
+					-- setSoundEffectEnabled(engineSound,"reverb",true)
+					-- echoOn = true
+					-- outputChatBox("ceil")
+				-- end
+				-- setSoundVolume(engineSound, soundVolume+2*math.sqrt(currentAccelerateState)*soundVolume)
+			-- else
+				-- if echoOn then
+					-- setSoundEffectEnabled(engineSound,"reverb",false)
+					-- echoOn = false
+					-- outputChatBox("no ceil")
+				-- end
+			-- end
+			
 			--setSoundVolume(turboSound, (velratio-0.6)*4)
 			if hasTurbo == 1 then
 				setSoundVolume(turboSound, spool*0.4)
