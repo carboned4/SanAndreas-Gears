@@ -428,7 +428,7 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="415" name="cheetah" type="car" soundname="v12lambo.wav" revlimit="7000" soundbase="3500" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="2">
+	<vehicle id="415" name="cheetah" type="car" soundname="v12old.ogg" revlimit="7000" soundbase="3500" soundvolume="0.10" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="2">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="80"/>
@@ -3669,7 +3669,7 @@
 			<inertia gear="4" value="210"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="534" name="remingtn" type="car" soundname="v8old2.wav" revlimit="6000" soundbase="2500" soundvolume="0.10" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="534" name="remingtn" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.10" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>

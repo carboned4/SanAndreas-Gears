@@ -301,7 +301,7 @@ function updateStuff(delta)
 					setSoundMaxDistance(backfireSound, 50)
 					setSoundMinDistance(backfireSound, 10)
 					
-					triggerServerEvent("onClientBackfire",resourceRoot,getLocalPlayer(),currentVehicle,vehicleexhaustNumber,oex,oey,oez,-fex,-fey,-fez,oexs,oeys,oezs,oex2, oey2, oez2)
+					triggerServerEvent("onClientBackfire",resourceRoot,getLocalPlayer(),currentVehicle,exhaustNumber,oex,oey,oez,-fex,-fey,-fez,oexs,oeys,oezs,oex2, oey2, oez2)
 				end
 			end
 			if currentGear == 0 or (not isVehicleOnGround(currentVehicle) and vehicleType ~= "mtruck") then
@@ -645,7 +645,7 @@ end
 addEventHandler("onClientResourceStart",getRootElement(),startThingsUp)
 
 function addBackfireFromOthers(fireNumber, x1, y1, z1, dx1, dy1, dz1, s1, s2, s3, x2, y2, z2)
-	outputChatBox("ok")
+	--outputChatBox(tostring(fireNumber))
 	--local ex,ey,ez = getVehicleModelExhaustFumesPosition(getElementModel(currentVehicle))
 	--local oex,oey,oez = getPositionFromElementOffset(currentVehicle, ex,ey,ez)
 	--local oex2,oey2,oez2 = 0,0,0

@@ -48,6 +48,7 @@
 	<file src="v8old4.wav" type="client" />
 	<file src="v8ferrari.wav" type="client" />
 	<file src="v12old.ogg" type="client" />
+	<file src="v12race.wav" type="client" />
 	<file src="truck.ogg" type="client" />
 	<file src="bikefast.ogg" type="client" />
 	<file src="rotary.wav" type="client" />
