@@ -2786,7 +2786,7 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="502" name="hotrinb" type="car" soundname="v12f1.ogg" revlimit="13000" soundbase="7200" soundvolume="0.15" numbergears="7" hasturbo="0" hasbackfire="1" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="502" name="hotrinb" type="car" soundname="v12f1_2.ogg" revlimit="13000" soundbase="6200" soundvolume="0.15" numbergears="7" hasturbo="0" hasbackfire="1" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="90"/>
