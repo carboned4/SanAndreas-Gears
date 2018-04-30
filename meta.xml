@@ -4,6 +4,7 @@
     <script src="sets.lua" type="client" />
     <script src="xml.lua" type="client" />
     <script src="sounds.lua" type="client" />
+    <script src="nonplayer.lua" type="client" />
     <script src="savelocal.lua" type="client" />
 	<script src="client.lua" type="client" />
     <script src="server.lua" type="server" />

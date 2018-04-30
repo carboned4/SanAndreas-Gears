@@ -5,7 +5,7 @@ end
 function setsUnion(a, b)
 	a = {unpack(a)}
 	for _,b_ in ipairs(b) do
-		if not find(b_, a) then table.insert(a, b_) end
+		if not setsFind(b_, a) then table.insert(a, b_) end
 	end
 	return a
 end
@@ -13,15 +13,15 @@ end
 function setsIntersection(a, b)
 	local ret = {}
 	for _,b_ in ipairs(b) do
-		if find(b_,a) then table.insert(ret, b_) end
+		if setsFind(b_,a) then table.insert(ret, b_) end
 	end
 	return ret
 end
 
 function setsDifference(a, b)
 	local ret = {}
-	for _,a_ in ipairs(a) do
-		if not find(a_,b) then table.insert(ret, a_) end
+	for _,a_ in pairs(a) do
+		if not setsFind(a_,b) then table.insert(ret, a_) end
 	end
 	return ret
 end

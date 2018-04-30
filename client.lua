@@ -8,6 +8,9 @@ local currentVehicle = false
 local spoolUpdateCounter = 0
 local spoolUpdateFrequency = 0.25
 
+allNodes = {}
+local counterNonPlayerUpdate = 1
+
 -- GENERAL VARIABLES (speed, turbo, controls)
 local currentGear = 1
 local vel
@@ -212,6 +215,14 @@ function updateStuff(delta)
 	delta = delta/1000
 	--outputChatBox(tostring(delta))
 	checkVehicleChanges()
+	
+	counterNonPlayerUpdate = counterNonPlayerUpdate-delta
+	if counterNonPlayerUpdate < 0 then
+		updateLists()
+		updateSounds()
+		counterNonPlayerUpdate = 1
+	end
+	
 	if not enable or not enableForVehicle then return end
 	--local g_vehicle = getPedOccupiedVehicle(g_player)
 	if currentVehicle then
@@ -632,6 +643,7 @@ function startThingsUp(rsc)
 	xmlRoot = xmlLoadFile("vehicles.xml")
 	createIdIndex()
 	checkControls()
+	loadAll(xmlRoot,IdIndex,allNodes)
 	
 	loadSettings();
 	--outputChatBox("startup: " ..tostring(enable) .. " " .. tostring(autogearbox))

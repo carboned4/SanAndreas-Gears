@@ -49,3 +49,27 @@ function getHandlingValues(xmlnode,vehicleid)
 	
 	return NvehicleType, NsoundName, NrevLimit, NsoundBase, NsoundVolume, NnumberGears, NhasTurbo, NhasBackfire, NturboBoostFactor, NexhaustNumber, Nspeeds, Naccelerations, Ninertias
 end
+
+
+function loadAll(xmlnode,idlist,destdict)
+	for k,v in pairs(idlist) do
+		local ivehicleType, isoundName, irevLimit, isoundBase, isoundVolume, inumberGears, ihasTurbo, ihasBackfire, iturboBoostFactor, iexhaustNumber, ispeeds, iaccelerations, iinertias = getHandlingValues(xmlnode,k)
+		destdict[k] = {
+			["vehicleType"] = ivehicleType,
+			["soundName"] = isoundName,
+			["revLimit"] = irevLimit,
+			["soundBase"] = isoundBase,
+			["soundVolume"] = isoundVolume,
+			["numberGears"] = inumberGears,
+			["hasTurbo"] = ihasTurbo,
+			["hasBackfire"] = ihasBackfire,
+			["turboBoostFactor"] = iturboBoostFactor,
+			["exhaustNumber"] = iexhaustNumber,
+			["speeds"] = ispeeds,
+			["accelerations"] = iaccelerations,
+			["inertias"] = iinertias,
+		}
+		
+	end
+	return destdict
+end
