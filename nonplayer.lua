@@ -47,7 +47,7 @@ function updateLists()
 	--outputChatBox("updateLists")
 	local playerX,playerY,playerZ = getElementPosition(getLocalPlayer())
 	--outputChatBox(tostring(playerX) .. " " .. tostring(playerY) .. " " .. tostring(playerZ))
-	local colSphere = createColSphere(playerX,playerY,playerZ,50)
+	--local colSphere = createColSphere(playerX,playerY,playerZ,50)
 	listAdd = {}
 	listRemove = {}
 	--listFrame = getElementsWithinColShape(colSphere,"vehicle")
@@ -62,7 +62,7 @@ function updateLists()
 		elseif getDistanceBetweenPoints3D(playerX,playerY,playerZ, vehx,vehy,vehz) >= 50 then
 			listFrame[k] = nil
 		elseif (vtype ~= "Automobile") and (vtype ~= "Bike") and (vtype ~= "Boat") and (vtype ~= "Quad") and (vtype ~= "Monster Truck") then
-			outputChatBox(vtype)
+			--outputChatBox(vtype)
 			listFrame[k] = nil
 		end 
 	end
