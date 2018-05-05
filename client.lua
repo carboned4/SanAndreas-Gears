@@ -9,7 +9,8 @@ local spoolUpdateCounter = 0
 local spoolUpdateFrequency = 0.25
 
 allNodes = {}
-local counterNonPlayerUpdate = 1
+local counterNonPlayerUpdateInterval = 0.2
+local counterNonPlayerUpdate = counterNonPlayerUpdateInterval
 
 -- GENERAL VARIABLES (speed, turbo, controls)
 local currentGear = 1
@@ -216,11 +217,15 @@ function updateStuff(delta)
 	--outputChatBox(tostring(delta))
 	checkVehicleChanges()
 	
+	local shouldUpdateNonPlayer = false
 	counterNonPlayerUpdate = counterNonPlayerUpdate-delta
 	if counterNonPlayerUpdate < 0 then
+		shouldUpdateNonPlayer = true
+		counterNonPlayerUpdate = counterNonPlayerUpdateInterval
+	end
+	if shouldUpdateNonPlayer then
 		updateLists()
 		updateSounds()
-		counterNonPlayerUpdate = 1
 	end
 	
 	if not enable or not enableForVehicle then return end
@@ -344,6 +349,9 @@ function updateStuff(delta)
 			end
 		end
 		
+		if shouldUpdateNonPlayer then
+			setElementData(currentVehicle,"gearsSoundRatio",velratio)
+		end
 		previousAccelerateState = currentAccelerateState
 		soundspeed = velratio*revLimit
 		if engineSound then
@@ -527,6 +535,7 @@ addEventHandler("onClientPreRender", root, updateStuff)
 
 function checkVehicleChanges()
 	if currentVehicle and not getPedOccupiedVehicle(getLocalPlayer()) then
+		setElementData(currentVehicle,"gearsSoundRatio",0.1)
 		currentVehicle = false
 		--outputChatBox("cv and not get")
 	end
