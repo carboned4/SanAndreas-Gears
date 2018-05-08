@@ -9,7 +9,7 @@ local spoolUpdateCounter = 0
 local spoolUpdateFrequency = 0.25
 
 allNodes = {}
-local counterNonPlayerUpdateInterval = 0.2
+local counterNonPlayerUpdateInterval = 0.02
 local counterNonPlayerUpdate = counterNonPlayerUpdateInterval
 
 -- GENERAL VARIABLES (speed, turbo, controls)

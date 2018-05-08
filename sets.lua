@@ -1,5 +1,5 @@
 local function setsFind(a, tbl)
-	for _,a_ in ipairs(tbl) do if a_==a then return true end end
+	for _,a_ in pairs(tbl) do if a_==a then return true end end
 end
 
 function setsUnion(a, b)

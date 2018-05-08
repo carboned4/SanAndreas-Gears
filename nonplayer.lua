@@ -5,9 +5,12 @@ listFrame = {} --from the current frame
 
 listSounds = {} --vehicle->sound
 
+local maxNonPlayerDistance = 150
+local minNonPlayerDistance = 15
+
 function doRemove()
 	for i,v in ipairs(listRemove) do
-		--outputChatBox("remove")
+		outputChatBox("remove")
 		local soundToStop = listSounds[v]
 		detachElements(soundToStop)
 		stopSound(soundToStop)
@@ -19,13 +22,13 @@ end
 function doAdd()
 	--outputChatBox("add")
 	for i,v in ipairs(listAdd) do
-		--outputChatBox("addveh")
+		outputChatBox("add")
 		local whichModel = getElementModel(v)
 		local whereToPlayX,whereToPlayY,whereToPlayZ = getElementPosition(v)
 		local whichFile = allNodes[whichModel]["soundName"]
 		local newSound = playSound3D(whichFile, whereToPlayX,whereToPlayY,whereToPlayZ, true) --last argument is to loop sound
-		setSoundMaxDistance(newSound,50)
-		setSoundMinDistance(newSound,15)
+		setSoundMaxDistance(newSound,maxNonPlayerDistance)
+		setSoundMinDistance(newSound,minNonPlayerDistance)
 		setSoundVolume(newSound,1.5*allNodes[whichModel]["soundVolume"])
 		attachElements(newSound,v)
 		listSounds[v] = newSound
@@ -47,19 +50,21 @@ function updateLists()
 	--outputChatBox("updateLists")
 	local playerX,playerY,playerZ = getElementPosition(getLocalPlayer())
 	--outputChatBox(tostring(playerX) .. " " .. tostring(playerY) .. " " .. tostring(playerZ))
-	--local colSphere = createColSphere(playerX,playerY,playerZ,50)
+	--local colSphere = createColSphere(playerX,playerY,playerZ,maxNonPlayerDistance)
 	listAdd = {}
 	listRemove = {}
+	listFrame = {}
 	--listFrame = getElementsWithinColShape(colSphere,"vehicle")
 	listFrame = getElementsByType("vehicle",getRootElement(),true)
 	for k,v in pairs(listFrame) do
+		--outputChatBox("vehicle")
 		local vtype = getVehicleType(v)
 		local vehx,vehy,vehz = getElementPosition(v)
 		if v == getPedOccupiedVehicle(getLocalPlayer()) then
 			listFrame[k] = nil
 		elseif getVehicleEngineState(v) == false then
 			listFrame[k] = nil
-		elseif getDistanceBetweenPoints3D(playerX,playerY,playerZ, vehx,vehy,vehz) >= 50 then
+		elseif getDistanceBetweenPoints3D(playerX,playerY,playerZ, vehx,vehy,vehz) >= maxNonPlayerDistance then
 			listFrame[k] = nil
 		elseif (vtype ~= "Automobile") and (vtype ~= "Bike") and (vtype ~= "Boat") and (vtype ~= "Quad") and (vtype ~= "Monster Truck") then
 			--outputChatBox(vtype)
