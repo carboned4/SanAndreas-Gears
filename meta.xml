@@ -22,8 +22,11 @@
 	<file src="turboSpool.wav" type="client" />
     <file src="BlowOff1.wav" type="client" />
     <file src="BlowOff2.wav" type="client" />
+    <file src="blowoff.wav" type="client" />
     <file src="starter.ogg" type="client" />
     <file src="backfire.wav" type="client" />
+    <file src="backfire1.wav" type="client" />
+    <file src="backfire2.wav" type="client" />
     <file src="v10viper.ogg" type="client" />
     <file src="v12lambo.wav" type="client" />
     <file src="v8trash.wav" type="client" />
@@ -59,6 +62,7 @@
 	<file src="dirtbike.ogg" type="client" />
 	<file src="i6skyline.ogg" type="client" />
 	<file src="i6skyline2.ogg" type="client" />
+	<file src="i6supra.wav" type="client" />
 	<file src="i4loud.ogg" type="client" />
 	<file src="EngineFast.ogg" type="client" />
 	<file src="EngineMid.ogg" type="client" />

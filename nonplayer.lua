@@ -10,7 +10,7 @@ local minNonPlayerDistance = 15
 
 function doRemove()
 	for i,v in ipairs(listRemove) do
-		outputChatBox("remove")
+		--outputChatBox("remove")
 		local soundToStop = listSounds[v]
 		detachElements(soundToStop)
 		stopSound(soundToStop)
@@ -22,7 +22,7 @@ end
 function doAdd()
 	--outputChatBox("add")
 	for i,v in ipairs(listAdd) do
-		outputChatBox("add")
+		--outputChatBox("add")
 		local whichModel = getElementModel(v)
 		local whereToPlayX,whereToPlayY,whereToPlayZ = getElementPosition(v)
 		local whichFile = allNodes[whichModel]["soundName"]

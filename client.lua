@@ -89,6 +89,7 @@ function changeGear ( commandName, gearNumber )
 			triggerServerEvent ( "onGearChange", resourceRoot, vehicle, gearNumber, speeds[gearNumber], accelerations[gearNumber], inertias[gearNumber] )
 			if hasTurbo == 1 then
 				blowOffSound = playSound("BlowOff1.wav", false, false)
+				--blowOffSound = playSound("blowoff.wav", false, false)
 				setSoundVolume(blowOffSound, spool)
 			end
 			spool = 0.0
@@ -300,6 +301,7 @@ function updateStuff(delta)
 			if previousAccelerateState > 0.0 then
 				if hasTurbo == 1 then
 					blowOffSound = playSound("BlowOff1.wav", false, false)
+					--blowOffSound = playSound("blowoff.wav", false, false)
 					setSoundVolume(blowOffSound, spool*0.7)
 				end
 				if hasBackfire == 1 and spool > 0.6 then
@@ -312,7 +314,7 @@ function updateStuff(delta)
 						fxAddTankFire(oex2, oey2, oez2, -fex, -fey, -fez)
 					end
 					oexs,oeys,oezs = getPositionFromElementOffset(currentVehicle, 0,ey,ez)
-					backfireSound = playSound3D("backfire.wav", oexs,oeys,oezs, false, false)
+					backfireSound = playSound3D("backfire2.wav", oexs,oeys,oezs, false, false)
 					setSoundVolume(backfireSound, 40)
 					setSoundMaxDistance(backfireSound, 50)
 					setSoundMinDistance(backfireSound, 10)
@@ -342,7 +344,7 @@ function updateStuff(delta)
 					fxAddTankFire(oex, oey, oez, -fex, -fey, -fez)
 				end
 				oex,oey,oez = getPositionFromElementOffset(currentVehicle, 0,ey,ez)
-				backfireSound = playSound3D("backfire.wav", oex,oey,oez, false, false)
+				backfireSound = playSound3D("backfire2.wav", oex,oey,oez, false, false)
 				setSoundVolume(backfireSound, 40)
 				setSoundMaxDistance(backfireSound, 50)
 				setSoundMinDistance(backfireSound, 10)
@@ -676,7 +678,7 @@ function addBackfireFromOthers(fireNumber, x1, y1, z1, dx1, dy1, dz1, s1, s2, s3
 		fxAddTankFire(x2, y2, z2, dx1, dy1, dz1)
 	end
 	--oexs,oeys,oezs = getPositionFromElementOffset(currentVehicle, 0,ey,ez)
-	local tempBackfireSound = playSound3D("backfire.wav", s1, s2, s3, false, false)
+	local tempBackfireSound = playSound3D("backfire2.wav", s1, s2, s3, false, false)
 	setSoundVolume(tempBackfireSound, 20)
 	setSoundMaxDistance(tempBackfireSound, 50)
 	setSoundMinDistance(tempBackfireSound, 10)
