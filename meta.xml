@@ -42,11 +42,15 @@
 	<file src="v6slow.ogg" type="client" />
 	<file src="v6fast.wav" type="client" />
 	<file src="v6slow2.ogg" type="client" />
+	<file src="v6vr4.ogg" type="client" />
+	<file src="v6loud.ogg" type="client" />
 	<file src="v8amg.wav" type="client" />
 	<file src="v8burble.wav" type="client" />
 	<file src="v8slow.ogg" type="client" />
 	<file src="v8slow2.ogg" type="client" />
 	<file src="v8u2.ogg" type="client" />
+	<file src="v8u.ogg" type="client" />
+	<file src="v8truck.ogg" type="client" />
 	<file src="v8old.ogg" type="client" />
 	<file src="v8old2.wav" type="client" />
 	<file src="v8old3.wav" type="client" />
@@ -58,16 +62,20 @@
 	<file src="bikefast.ogg" type="client" />
 	<file src="rotary.wav" type="client" />
 	<file src="rotary.ogg" type="client" />
+	<file src="rotary3.ogg" type="client" />
 	<file src="b4subaru.ogg" type="client" />
+	<file src="b4subaru2.ogg" type="client" />
 	<file src="dirtbike.ogg" type="client" />
 	<file src="i6skyline.ogg" type="client" />
 	<file src="i6skyline2.ogg" type="client" />
+	<file src="i6skyline3.ogg" type="client" />
 	<file src="i6supra.wav" type="client" />
 	<file src="i4loud.ogg" type="client" />
 	<file src="EngineFast.ogg" type="client" />
 	<file src="EngineMid.ogg" type="client" />
 	<file src="EngineLow.ogg" type="client" />
 	<file src="EngineHigh.wav" type="client" />
+	<file src="EngineHigh.ogg" type="client" />
 	<file src="EngineFast.wav" type="client" />
 	<file src="EngineMid.wav" type="client" />
 	<file src="EngineLow.wav" type="client" />
