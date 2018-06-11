@@ -45,3 +45,17 @@ function spreadBackfire(player,veh, fireNumber, x1, y1, z1, dx1, dy1, dz1, s1, s
 end
 addEvent( "onClientBackfire", true )
 addEventHandler( "onClientBackfire", resourceRoot, spreadBackfire)
+
+
+function resetVehicleHandling(vehicle)
+	--outputChatBox("exited")
+	local originalHandling = getOriginalHandling(getElementModel(vehicle))
+	setVehicleHandling(vehicle, "numberOfGears", originalHandling["numberOfGears"])
+	setVehicleHandling(vehicle, "maxVelocity", originalHandling["maxVelocity"])
+	setVehicleHandling(vehicle, "engineAcceleration", originalHandling["engineAcceleration"] )
+	setVehicleHandling(vehicle, "engineInertia", originalHandling["engineInertia"])
+	setVehicleHandling(vehicle, "dragCoeff", originalHandling["dragCoeff"])
+	
+end
+addEvent( "onResetVehicleHandling", true)
+addEventHandler( "onResetVehicleHandling", resourceRoot, resetVehicleHandling)

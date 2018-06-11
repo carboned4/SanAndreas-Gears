@@ -318,22 +318,22 @@
 			<inertia gear="5" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="411" name="infernus" type="car" soundname="v12nfs.ogg" revlimit="8000" soundbase="3500" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="1" turboboostfactor="0" exhaustnumber="2">
+	<vehicle id="411" name="infernus" type="car" soundname="v6loud.ogg" revlimit="8000" soundbase="6000" soundvolume="0.1" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="2">
 		<speeds>
 			<speed gear="0" value="80"/>
-			<speed gear="1" value="80"/>
-			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="1" value="60"/>
+			<speed gear="2" value="100"/>
+			<speed gear="3" value="150"/>
+			<speed gear="4" value="200"/>
+			<speed gear="5" value="260"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
+			<acceleration gear="1" value="80"/>
+			<acceleration gear="2" value="38"/>
+			<acceleration gear="3" value="20"/>
 			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="5" value="14"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
@@ -341,7 +341,7 @@
 			<inertia gear="2" value="160"/>
 			<inertia gear="3" value="180"/>
 			<inertia gear="4" value="210"/>
-			<inertia gear="5" value="250"/>
+			<inertia gear="5" value="260"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="412" name="voodoo" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
@@ -413,7 +413,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="415" name="cheetah" type="car" soundname="v12old.ogg" revlimit="7000" soundbase="3500" soundvolume="0.10" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="2">
+	<vehicle id="415" name="cheetah" type="car" soundname="v12lambo.wav" revlimit="7000" soundbase="3500" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="2">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="80"/>
@@ -806,30 +806,18 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="430" name="predator" type="boat" soundname="v8audi.ogg" revlimit="6000" soundbase="5000" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="430" name="predator" type="boat" soundname="v8audi.ogg" revlimit="4000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
-			<speed gear="0" value="80"/>
-			<speed gear="1" value="80"/>
-			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="0" value="190"/>
+			<speed gear="1" value="300"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
-			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="1" value="1"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="150"/>
-			<inertia gear="2" value="160"/>
-			<inertia gear="3" value="180"/>
-			<inertia gear="4" value="210"/>
-			<inertia gear="5" value="250"/>
+			<inertia gear="1" value="10"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="431" name="bus" type="car" soundname="truck.ogg" revlimit="3000" soundbase="750" soundvolume="0.10" numbergears="10" hasturbo="1" hasbackfire="0" turboboostfactor="3" exhaustnumber="1">
@@ -1279,30 +1267,18 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="446" name="squalo" type="boat" soundname="v8audi.ogg" revlimit="6000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="446" name="squalo" type="boat" soundname="v8audi.ogg" revlimit="4000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
-			<speed gear="0" value="80"/>
-			<speed gear="1" value="80"/>
-			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="0" value="190"/>
+			<speed gear="1" value="300"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
-			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="1" value="1"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="150"/>
-			<inertia gear="2" value="160"/>
-			<inertia gear="3" value="180"/>
-			<inertia gear="4" value="210"/>
-			<inertia gear="5" value="250"/>
+			<inertia gear="1" value="10"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="447" name="seaspar" type="heli" soundname="i4slow.ogg" revlimit="6000" soundbase="3500" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
@@ -1409,22 +1385,22 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="451" name="turismo" type="car" soundname="v8ferrari.wav" revlimit="8000" soundbase="4250" soundvolume="0.15" numbergears="5" hasturbo="1" hasbackfire="0" turboboostfactor="1" exhaustnumber="1">
+	<vehicle id="451" name="turismo" type="car" soundname="v8ferrari.wav" revlimit="8000" soundbase="4250" soundvolume="0.15" numbergears="5" hasturbo="1" hasbackfire="0" turboboostfactor="0.5" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="80"/>
 			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="3" value="190"/>
+			<speed gear="4" value="270"/>
+			<speed gear="5" value="360"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
 			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
+			<acceleration gear="2" value="34"/>
+			<acceleration gear="3" value="23"/>
 			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="5" value="14"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
@@ -1435,82 +1411,46 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="452" name="speeder" type="boat" soundname="v8audi.ogg" revlimit="6000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="452" name="speeder" type="boat" soundname="v8audi.ogg" revlimit="4000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
-			<speed gear="0" value="80"/>
-			<speed gear="1" value="80"/>
-			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="0" value="190"/>
+			<speed gear="1" value="200"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
-			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="1" value="1"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="150"/>
-			<inertia gear="2" value="160"/>
-			<inertia gear="3" value="180"/>
-			<inertia gear="4" value="210"/>
-			<inertia gear="5" value="250"/>
+			<inertia gear="1" value="10"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="453" name="reefer" type="boat" soundname="v8slow.ogg" revlimit="6000" soundbase="2500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="453" name="reefer" type="boat" soundname="v8slow2.ogg" revlimit="4000" soundbase="4000" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
-			<speed gear="0" value="80"/>
-			<speed gear="1" value="80"/>
-			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="0" value="190"/>
+			<speed gear="1" value="200"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
-			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="1" value="1"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="150"/>
-			<inertia gear="2" value="160"/>
-			<inertia gear="3" value="180"/>
-			<inertia gear="4" value="210"/>
-			<inertia gear="5" value="250"/>
+			<inertia gear="1" value="10"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="454" name="tropic" type="boat" soundname="v8slow.ogg" revlimit="6000" soundbase="2500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="454" name="tropic" type="boat" soundname="v8slow2.ogg" revlimit="4000" soundbase="4000" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
-			<speed gear="0" value="80"/>
-			<speed gear="1" value="80"/>
-			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="0" value="190"/>
+			<speed gear="1" value="300"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
-			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="1" value="1"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="150"/>
-			<inertia gear="2" value="160"/>
-			<inertia gear="3" value="180"/>
-			<inertia gear="4" value="210"/>
-			<inertia gear="5" value="250"/>
+			<inertia gear="1" value="10"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="455" name="flatbed" type="car" soundname="truck.ogg" revlimit="3000" soundbase="750" soundvolume="0.10" numbergears="10" hasturbo="1" hasbackfire="0" turboboostfactor="3" exhaustnumber="1">
@@ -1577,7 +1517,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="457" name="caddy" type="car" soundname="i4slow.ogg" revlimit="6000" soundbase="3500" soundvolume="0.15" numbergears="2" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="457" name="caddy" type="car" soundname="electric1.ogg" revlimit="10000" soundbase="3500" soundvolume="0.5" numbergears="2" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="80"/>
@@ -1585,13 +1525,13 @@
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
+			<acceleration gear="1" value="16"/>
+			<acceleration gear="2" value="10"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="150"/>
-			<inertia gear="2" value="160"/>
+			<inertia gear="1" value="5"/>
+			<inertia gear="2" value="5"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="458" name="solair" type="car" soundname="v6slow2.ogg" revlimit="6000" soundbase="1750" soundvolume="0.12" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
@@ -1943,56 +1883,32 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="472" name="coastg" type="boat" soundname="v8audi.ogg" revlimit="6000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="472" name="coastg" type="boat" soundname="v8audi.ogg" revlimit="4000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
-			<speed gear="0" value="80"/>
-			<speed gear="1" value="80"/>
-			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="0" value="190"/>
+			<speed gear="1" value="300"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
-			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="1" value="1.5"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="150"/>
-			<inertia gear="2" value="160"/>
-			<inertia gear="3" value="180"/>
-			<inertia gear="4" value="210"/>
-			<inertia gear="5" value="250"/>
+			<inertia gear="1" value="10"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="473" name="dinghy" type="boat" soundname="v8slow.ogg" revlimit="6000" soundbase="2500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="473" name="dinghy" type="boat" soundname="v8audi.ogg" revlimit="4000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
-			<speed gear="0" value="80"/>
-			<speed gear="1" value="80"/>
-			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="0" value="190"/>
+			<speed gear="1" value="200"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
-			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="1" value="0.5"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="150"/>
-			<inertia gear="2" value="160"/>
-			<inertia gear="3" value="180"/>
-			<inertia gear="4" value="210"/>
-			<inertia gear="5" value="250"/>
+			<inertia gear="1" value="10"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="474" name="hermes" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
@@ -2067,7 +1983,7 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="477" name="zr350" type="car" soundname="rotary3.ogg" revlimit="8000" soundbase="5000" soundvolume="0.25" numbergears="5" hasturbo="1" hasbackfire="1" turboboostfactor="1" exhaustnumber="1">
+	<vehicle id="477" name="zr350" type="car" soundname="rotary3.ogg" revlimit="8000" soundbase="5000" soundvolume="0.2" numbergears="5" hasturbo="1" hasbackfire="1" turboboostfactor="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="60"/>
@@ -2139,22 +2055,22 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="480" name="comet" type="car" soundname="f6porsche.ogg" revlimit="6000" soundbase="3500" soundvolume="0.10" numbergears="5" hasturbo="1" hasbackfire="0" turboboostfactor="1" exhaustnumber="1">
+	<vehicle id="480" name="comet" type="car" soundname="f6porsche.ogg" revlimit="6000" soundbase="3500" soundvolume="0.10" numbergears="5" hasturbo="1" hasbackfire="0" turboboostfactor="0.5" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="80"/>
 			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="3" value="200"/>
+			<speed gear="4" value="270"/>
+			<speed gear="5" value="360"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
 			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="40"/>
+			<acceleration gear="2" value="36"/>
 			<acceleration gear="3" value="27"/>
-			<acceleration gear="4" value="20"/>
-			<acceleration gear="5" value="18"/>
+			<acceleration gear="4" value="19"/>
+			<acceleration gear="5" value="17"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
@@ -2237,30 +2153,18 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="484" name="marquis" type="boat" soundname="v6slow.ogg" revlimit="6000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="484" name="marquis" type="boat" soundname="v8slow2.ogg" revlimit="4000" soundbase="4000" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
-			<speed gear="0" value="80"/>
-			<speed gear="1" value="80"/>
-			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="0" value="190"/>
+			<speed gear="1" value="200"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
-			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="1" value="0.5"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="150"/>
-			<inertia gear="2" value="160"/>
-			<inertia gear="3" value="180"/>
-			<inertia gear="4" value="210"/>
-			<inertia gear="5" value="250"/>
+			<inertia gear="1" value="10"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="485" name="baggage" type="car" soundname="i4slow.ogg" revlimit="6000" soundbase="3500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
@@ -2471,30 +2375,18 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="493" name="jetmax" type="boat" soundname="v8audi.ogg" revlimit="6000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="493" name="jetmax" type="boat" soundname="v8audi.ogg" revlimit="4000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="2">
 		<speeds>
-			<speed gear="0" value="80"/>
-			<speed gear="1" value="80"/>
-			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="0" value="190"/>
+			<speed gear="1" value="300"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
-			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="1" value="2"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="150"/>
-			<inertia gear="2" value="160"/>
-			<inertia gear="3" value="180"/>
-			<inertia gear="4" value="210"/>
-			<inertia gear="5" value="250"/>
+			<inertia gear="1" value="10"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="494" name="hotring" type="car" soundname="i6straight.ogg" revlimit="8000" soundbase="4250" soundvolume="0.15" numbergears="6" hasturbo="0" hasbackfire="1" turboboostfactor="0" exhaustnumber="2">
@@ -2774,7 +2666,7 @@
 			<inertia gear="4" value="210"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="505" name="rnchlure" type="car" soundname="v8slow2.ogg" revlimit="6000" soundbase="4000" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="505" name="rnchlure" type="car" soundname="v12nfs.ogg" revlimit="8000" soundbase="3500" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="1" turboboostfactor="0" exhaustnumber="2">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="80"/>
@@ -4074,27 +3966,27 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="555" name="windsor" type="car" soundname="i6bmw.ogg" revlimit="5000" soundbase="3500" soundvolume="0.10" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="555" name="windsor" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
-			<speed gear="2" value="100"/>
-			<speed gear="3" value="150"/>
-			<speed gear="4" value="200"/>
+			<speed gear="2" value="115"/>
+			<speed gear="3" value="180"/>
+			<speed gear="4" value="230"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
 			<acceleration gear="1" value="80"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="23"/>
-			<acceleration gear="4" value="17"/>
+			<acceleration gear="2" value="25"/>
+			<acceleration gear="3" value="18"/>
+			<acceleration gear="4" value="15"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
 			<inertia gear="1" value="120"/>
 			<inertia gear="2" value="160"/>
-			<inertia gear="3" value="180"/>
-			<inertia gear="4" value="210"/>
+			<inertia gear="3" value="190"/>
+			<inertia gear="4" value="250"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="556" name="monstera" type="mtruck" soundname="v8audi.ogg" revlimit="6000" soundbase="3500" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
@@ -5093,53 +4985,41 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="595" name="launch" type="boat" soundname="v8audi.ogg" revlimit="6000" soundbase="5000" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="595" name="launch" type="boat" soundname="v8audi.ogg" revlimit="4000" soundbase="3500" soundvolume="0.15" numbergears="1" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
-			<speed gear="0" value="80"/>
-			<speed gear="1" value="80"/>
-			<speed gear="2" value="120"/>
-			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
-			<speed gear="5" value="300"/>
+			<speed gear="0" value="190"/>
+			<speed gear="1" value="300"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="60"/>
-			<acceleration gear="2" value="35"/>
-			<acceleration gear="3" value="25"/>
-			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="15"/>
+			<acceleration gear="1" value="1"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="150"/>
-			<inertia gear="2" value="160"/>
-			<inertia gear="3" value="180"/>
-			<inertia gear="4" value="210"/>
-			<inertia gear="5" value="250"/>
+			<inertia gear="1" value="10"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="596" name="copcarla" type="car" soundname="v8slow2.ogg" revlimit="6000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
-			<speed gear="2" value="110"/>
+			<speed gear="2" value="115"/>
 			<speed gear="3" value="180"/>
-			<speed gear="4" value="250"/>
+			<speed gear="4" value="230"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="40"/>
-			<acceleration gear="2" value="18"/>
-			<acceleration gear="3" value="12"/>
-			<acceleration gear="4" value="10"/>
+			<acceleration gear="1" value="80"/>
+			<acceleration gear="2" value="25"/>
+			<acceleration gear="3" value="18"/>
+			<acceleration gear="4" value="15"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
-			<inertia gear="1" value="100"/>
-			<inertia gear="2" value="110"/>
-			<inertia gear="3" value="130"/>
-			<inertia gear="4" value="150"/>
+			<inertia gear="1" value="120"/>
+			<inertia gear="2" value="160"/>
+			<inertia gear="3" value="190"/>
+			<inertia gear="4" value="250"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="597" name="copcarsf" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
@@ -5353,7 +5233,7 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="605" name="sadlshit" type="car" soundname="v6slow.ogg" revlimit="5000" soundbase="3500" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="1">
+	<vehicle id="605" name="sadlshit" type="car" soundname="v12old.ogg" revlimit="7000" soundbase="3500" soundvolume="0.10" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" exhaustnumber="2">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="80"/>

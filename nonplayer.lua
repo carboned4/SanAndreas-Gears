@@ -26,7 +26,7 @@ function doAdd()
 		local whichModel = getElementModel(v)
 		local whereToPlayX,whereToPlayY,whereToPlayZ = getElementPosition(v)
 		local whichFile = allNodes[whichModel]["soundName"]
-		local newSound = playSound3D(whichFile, whereToPlayX,whereToPlayY,whereToPlayZ, true) --last argument is to loop sound
+		local newSound = playSound3D("audio/"..whichFile, whereToPlayX,whereToPlayY,whereToPlayZ, true) --last argument is to loop sound
 		setSoundMaxDistance(newSound,maxNonPlayerDistance)
 		setSoundMinDistance(newSound,minNonPlayerDistance)
 		setSoundVolume(newSound,1.5*allNodes[whichModel]["soundVolume"])

@@ -88,8 +88,8 @@ function changeGear ( commandName, gearNumber )
 		if getLocalPlayer() == getVehicleOccupant(vehicle, 0) then
 			triggerServerEvent ( "onGearChange", resourceRoot, vehicle, gearNumber, speeds[gearNumber], accelerations[gearNumber], inertias[gearNumber] )
 			if hasTurbo == 1 then
-				blowOffSound = playSound("BlowOff1.wav", false, false)
-				--blowOffSound = playSound("blowoff.wav", false, false)
+				blowOffSound = playSound("audio/BlowOff1.wav", false, false)
+				--blowOffSound = playSound("audio/blowoff.wav", false, false)
 				setSoundVolume(blowOffSound, spool)
 			end
 			spool = 0.0
@@ -155,7 +155,7 @@ function startEngineSound (player, seat)
 	if not currentVehicle then return
 	end
 	
-	vehicleId = getVehicleModelFromName(getVehicleName(currentVehicle))
+	vehicleId = getElementModel(currentVehicle)
 	vehicleType, soundName, revLimit, soundBase, soundVolume, numberGears, hasTurbo, hasBackfire, turboBoostFactor, exhaustNumber, speeds, accelerations, inertias = getHandlingValues(xmlRoot,vehicleId)
 	--outputChatBox(soundName)
 	if vehicleType ~= "car" and vehicleType ~= "bike" and vehicleType ~= "boat" and vehicleType ~= "quad" and vehicleType ~= "mtruck" then
@@ -164,14 +164,14 @@ function startEngineSound (player, seat)
 	else
 		enableForVehicle = true
 	end
-	starterSound = playSound("starter.ogg",false,false)
+	starterSound = playSound("audio/starter.ogg",false,false)
 	setSoundVolume(starterSound, 0.3)
 	currentGear=1
 	changeGear ( "changegear", currentGear )
-	engineSound = playSound(soundName, true, false)
+	engineSound = playSound("audio/"..soundName, true, false)
 	setSoundVolume(engineSound, 0.1)
 	
-	turboSound = playSound("turboSpool.wav", true, false)
+	turboSound = playSound("audio/turboSpool.wav", true, false)
 	setSoundVolume(turboSound, 0.0)
 	
 	vel = getCarVelocity(currentVehicle)
@@ -202,6 +202,15 @@ function endEngineSound (player, seat)
 end
 --addEventHandler("onClientVehicleExit",  root, endEngineSound)
 --addEventHandler("onClientVehicleExplode",  root, endEngineSound)
+
+function handleVehicleExit(theVehicle, seat)
+	if source ~= getLocalPlayer() then return end
+	--outputChatBox("ok")
+	if seat ~= 0 then return end
+	--outputChatBox("ok2")
+	triggerServerEvent("onResetVehicleHandling",resourceRoot,theVehicle)
+end
+addEventHandler("onClientPlayerVehicleExit",  root, handleVehicleExit)
 
 
 g_player = getLocalPlayer()
@@ -281,7 +290,7 @@ function updateStuff(delta)
 		--outputChatBox(tostring(movcos))
 		
 		if currentAccelerateState > velratio*0.7 then
-			if (currentGear ~= 0) and (seemsToDrift or (not isVehicleOnGround(currentVehicle) and vehicleType ~= "mtruck")) then
+			if (currentGear ~= 0) and (seemsToDrift or (not isVehicleOnGround(currentVehicle) and vehicleType ~= "mtruck" and vehicleType ~= "boat")) then
 				neutralRevs = math.min(neutralRevs + currentAccelerateState*1.8*delta/(math.sqrt(currentGear+1)), 1.0) --0.03
 				velratio = math.max(neutralRevs,0.1)
 			elseif currentGear == 0 then
@@ -300,8 +309,8 @@ function updateStuff(delta)
 		else
 			if previousAccelerateState > 0.0 then
 				if hasTurbo == 1 then
-					blowOffSound = playSound("BlowOff1.wav", false, false)
-					--blowOffSound = playSound("blowoff.wav", false, false)
+					blowOffSound = playSound("audio/BlowOff1.wav", false, false)
+					--blowOffSound = playSound("audio/blowoff.wav", false, false)
 					setSoundVolume(blowOffSound, spool*0.7)
 				end
 				if hasBackfire == 1 and spool > 0.6 then
@@ -314,7 +323,7 @@ function updateStuff(delta)
 						fxAddTankFire(oex2, oey2, oez2, -fex, -fey, -fez)
 					end
 					oexs,oeys,oezs = getPositionFromElementOffset(currentVehicle, 0,ey,ez)
-					backfireSound = playSound3D("backfire2.wav", oexs,oeys,oezs, false, false)
+					backfireSound = playSound3D("audio/backfire2.wav", oexs,oeys,oezs, false, false)
 					setSoundVolume(backfireSound, 40)
 					setSoundMaxDistance(backfireSound, 50)
 					setSoundMinDistance(backfireSound, 10)
@@ -322,7 +331,7 @@ function updateStuff(delta)
 					triggerServerEvent("onClientBackfire",resourceRoot,getLocalPlayer(),currentVehicle,exhaustNumber,oex,oey,oez,-fex,-fey,-fez,oexs,oeys,oezs,oex2, oey2, oez2)
 				end
 			end
-			if currentGear == 0 or (not isVehicleOnGround(currentVehicle) and vehicleType ~= "mtruck") then
+			if currentGear == 0 or (not isVehicleOnGround(currentVehicle) and vehicleType ~= "mtruck" and vehicleType ~= "boat") then
 				neutralRevs = math.max(0.1,neutralRevs-0.6*delta) --0.01
 				velratio = math.max(neutralRevs,0.1)
 			else
@@ -344,7 +353,7 @@ function updateStuff(delta)
 					fxAddTankFire(oex, oey, oez, -fex, -fey, -fez)
 				end
 				oex,oey,oez = getPositionFromElementOffset(currentVehicle, 0,ey,ez)
-				backfireSound = playSound3D("backfire2.wav", oex,oey,oez, false, false)
+				backfireSound = playSound3D("audio/backfire2.wav", oex,oey,oez, false, false)
 				setSoundVolume(backfireSound, 40)
 				setSoundMaxDistance(backfireSound, 50)
 				setSoundMinDistance(backfireSound, 10)
@@ -559,7 +568,7 @@ function checkVehicleChanges()
 	end
 	--outputChatBox(tostring(engineSound) .. " " .. tostring(currentVehicle) .. " " .. tostring(getPedOccupiedVehicle(getLocalPlayer())))
 	--outputChatBox(tostring(vehicleId).. " " .. tostring(getVehicleModelFromName(getVehicleName(currentVehicle))) .. " " .. tostring(getVehicleModelFromName(getVehicleName(getPedOccupiedVehicle(getLocalPlayer())))))
-	if currentVehicle and getPedOccupiedVehicle(getLocalPlayer()) and vehicleId ~= getVehicleModelFromName(getVehicleName(getPedOccupiedVehicle(getLocalPlayer()))) then
+	if currentVehicle and getPedOccupiedVehicle(getLocalPlayer()) and vehicleId ~= getElementModel(getPedOccupiedVehicle(getLocalPlayer())) then
 		endEngineSound(getLocalPlayer(),0)
 		currentVehicle = getPedOccupiedVehicle(getLocalPlayer())
 		startEngineSound(getLocalPlayer(),getPedOccupiedVehicleSeat(getLocalPlayer()))
@@ -678,7 +687,7 @@ function addBackfireFromOthers(fireNumber, x1, y1, z1, dx1, dy1, dz1, s1, s2, s3
 		fxAddTankFire(x2, y2, z2, dx1, dy1, dz1)
 	end
 	--oexs,oeys,oezs = getPositionFromElementOffset(currentVehicle, 0,ey,ez)
-	local tempBackfireSound = playSound3D("backfire2.wav", s1, s2, s3, false, false)
+	local tempBackfireSound = playSound3D("audio/backfire2.wav", s1, s2, s3, false, false)
 	setSoundVolume(tempBackfireSound, 20)
 	setSoundMaxDistance(tempBackfireSound, 50)
 	setSoundMinDistance(tempBackfireSound, 10)
