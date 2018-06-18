@@ -21,6 +21,7 @@ function getHandlingValues(xmlnode,vehicleid)
 	local NhasBackfire = tonumber(xmlNodeGetAttribute(vehicleNode,"hasbackfire"))
 	local NturboBoostFactor = tonumber(xmlNodeGetAttribute(vehicleNode,"turboboostfactor"))
 	local NexhaustNumber = tonumber(xmlNodeGetAttribute(vehicleNode,"exhaustnumber"))
+	local NturboLevel = tonumber(xmlNodeGetAttribute(vehicleNode,"turbolevel"))
 	--outputChatBox(NsoundName)
 	
 	local speedNodes = xmlNodeGetChildren(xmlFindChild(vehicleNode,"speeds",0))
@@ -47,7 +48,7 @@ function getHandlingValues(xmlnode,vehicleid)
 		--outputChatBox(xmlNodeGetAttribute(sn,"gear") .. " gear : inertia " .. xmlNodeGetAttribute(sn,"value"))
 	end
 	
-	return NvehicleType, NsoundName, NrevLimit, NsoundBase, NsoundVolume, NnumberGears, NhasTurbo, NhasBackfire, NturboBoostFactor, NexhaustNumber, Nspeeds, Naccelerations, Ninertias
+	return NvehicleType, NsoundName, NrevLimit, NsoundBase, NsoundVolume, NnumberGears, NhasTurbo, NhasBackfire, NturboBoostFactor, NexhaustNumber, Nspeeds, Naccelerations, Ninertias, NturboLevel
 end
 
 

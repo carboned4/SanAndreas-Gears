@@ -66,6 +66,7 @@ local hasBackfire = 1
 local turboBoostFactor = 2
 local exhaustNumber = 2
 local vehicleType
+local turboLevel = 1
 
 
 local speeds = {1000, 80, 120, 180, 250, 300}
@@ -88,9 +89,27 @@ function changeGear ( commandName, gearNumber )
 		if getLocalPlayer() == getVehicleOccupant(vehicle, 0) then
 			triggerServerEvent ( "onGearChange", resourceRoot, vehicle, gearNumber, speeds[gearNumber], accelerations[gearNumber], inertias[gearNumber] )
 			if hasTurbo == 1 then
-				blowOffSound = playSound("audio/BlowOff1.wav", false, false)
 				--blowOffSound = playSound("audio/blowoff.wav", false, false)
-				setSoundVolume(blowOffSound, spool)
+				if turboLevel == 1 then
+					blowOffSound = playSound("audio/TURBO_BIG_1_MB_03.wav", false, false)
+					setSoundVolume(blowOffSound, spool*0.1)
+				elseif turboLevel == 2 then
+					if spool < 0.5 then
+						blowOffSound = playSound("audio/TURBO_BIG_1_MB_03.wav", false, false)
+						setSoundVolume(blowOffSound, spool*0.2)
+					else
+						blowOffSound = playSound("audio/TURBO_BIG_2_MB_03.wav", false, false)
+						setSoundVolume(blowOffSound, spool*0.2)
+					end
+				elseif turboLevel == 3 then
+					if spool < 0.5 then
+						blowOffSound = playSound("audio/TURBO_BIG_2_MB_03.wav", false, false)
+						setSoundVolume(blowOffSound, spool*0.2)
+					else
+						blowOffSound = playSound("audio/TURBO_SML2_0_MB_03.wav", false, false)
+						setSoundVolume(blowOffSound, spool*0.2)
+					end
+				end
 			end
 			spool = 0.0
 			
@@ -156,7 +175,7 @@ function startEngineSound (player, seat)
 	end
 	
 	vehicleId = getElementModel(currentVehicle)
-	vehicleType, soundName, revLimit, soundBase, soundVolume, numberGears, hasTurbo, hasBackfire, turboBoostFactor, exhaustNumber, speeds, accelerations, inertias = getHandlingValues(xmlRoot,vehicleId)
+	vehicleType, soundName, revLimit, soundBase, soundVolume, numberGears, hasTurbo, hasBackfire, turboBoostFactor, exhaustNumber, speeds, accelerations, inertias, turboLevel = getHandlingValues(xmlRoot,vehicleId)
 	--outputChatBox(soundName)
 	if vehicleType ~= "car" and vehicleType ~= "bike" and vehicleType ~= "boat" and vehicleType ~= "quad" and vehicleType ~= "mtruck" then
 		enableForVehicle = false
@@ -171,7 +190,7 @@ function startEngineSound (player, seat)
 	engineSound = playSound("audio/"..soundName, true, false)
 	setSoundVolume(engineSound, 0.1)
 	
-	turboSound = playSound("audio/turboSpool.wav", true, false)
+	turboSound = playSound("audio/turboSpool (2).wav", true, false)
 	setSoundVolume(turboSound, 0.0)
 	
 	vel = getCarVelocity(currentVehicle)
@@ -309,9 +328,27 @@ function updateStuff(delta)
 		else
 			if previousAccelerateState > 0.0 then
 				if hasTurbo == 1 then
-					blowOffSound = playSound("audio/BlowOff1.wav", false, false)
 					--blowOffSound = playSound("audio/blowoff.wav", false, false)
-					setSoundVolume(blowOffSound, spool*0.7)
+					if turboLevel == 1 then
+						blowOffSound = playSound("audio/TURBO_BIG_1_MB_03.wav", false, false)
+						setSoundVolume(blowOffSound, spool*0.1)
+					elseif turboLevel == 2 then
+						if spool < 0.7 then
+							blowOffSound = playSound("audio/TURBO_BIG_2_MB_03.wav", false, false)
+							setSoundVolume(blowOffSound, spool*0.2)
+						else
+							blowOffSound = playSound("audio/TURBO_SML2_0_MB_03.wav", false, false)
+							setSoundVolume(blowOffSound, spool*0.2)
+						end
+					elseif turboLevel == 3 then
+						if spool < 0.7 then
+							blowOffSound = playSound("audio/TURBO_SML2_0_MB_03.wav", false, false)
+							setSoundVolume(blowOffSound, spool*0.2)
+						else
+							blowOffSound = playSound("audio/blowoff.wav", false, false)
+							setSoundVolume(blowOffSound, spool*0.2)
+						end
+					end
 				end
 				if hasBackfire == 1 and spool > 0.6 then
 					local ex,ey,ez = getVehicleModelExhaustFumesPosition(getElementModel(currentVehicle))
@@ -387,7 +424,7 @@ function updateStuff(delta)
 			
 			--setSoundVolume(turboSound, (velratio-0.6)*4)
 			if hasTurbo == 1 then
-				setSoundVolume(turboSound, spool*0.4)
+				setSoundVolume(turboSound, spool*0.1)
 			else
 				setSoundVolume(turboSound, 0)
 			end

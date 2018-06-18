@@ -20,7 +20,12 @@
     <file src="vehicles.xml" type="client" />
     
 	<file src="audio/turboSpool.wav" type="client" />
-    <file src="audio/BlowOff1.wav" type="client" />
+	<file src="audio/turboSpool (1).wav" type="client" />
+	<file src="audio/turboSpool (2).wav" type="client" />
+	<file src="audio/TURBO_BIG_1_MB_03.wav" type="client" />
+	<file src="audio/TURBO_BIG_2_MB_03.wav" type="client" />
+	<file src="audio/TURBO_SML2_0_MB_03.wav" type="client" />
+	<file src="audio/BlowOff1.wav" type="client" />
     <file src="audio/BlowOff2.wav" type="client" />
     <file src="audio/blowoff.wav" type="client" />
     <file src="audio/starter.ogg" type="client" />
