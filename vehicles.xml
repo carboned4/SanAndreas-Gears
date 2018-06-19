@@ -1082,7 +1082,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="439" name="stallion" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="439" name="stallion" type="car" soundname="v8u.ogg" revlimit="5000" soundbase="5500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -1934,7 +1934,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="475" name="sabre" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="475" name="sabre" type="car" soundname="CAR_35_ENG_MB_SPU_06.wav" revlimit="5000" soundbase="2500" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -3262,7 +3262,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="527" name="cadrona" type="car" soundname="v8audi.ogg" revlimit="5000" soundbase="5000" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="2">
+	<vehicle id="527" name="cadrona" type="car" soundname="v8audi.ogg" revlimit="6000" soundbase="5000" soundvolume="0.15" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="2">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="60"/>
@@ -3640,7 +3640,7 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="542" name="clover" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="542" name="clover" type="car" soundname="CAR_38_ENG_MB_EE_07.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -5022,7 +5022,7 @@
 			<inertia gear="4" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="597" name="copcarsf" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="597" name="copcarsf" type="car" soundname="v8slow3.wav" revlimit="6000" soundbase="3000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="90"/>
 			<speed gear="1" value="90"/>

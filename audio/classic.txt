@@ -1,0 +1,32 @@
+peren - chevy sb1
+voodoo - chevy sb2
+esperant - chevy bb2
+hotknife - ford sb1
+glendale - dodge mb1
+oceanic - dodge mb1
+hermes - ford sb1
+sabre - chevy bb1
+walton - chevy sb2
+bloodra - dodge mb1
+buccanee - chevy bb2
+tractor
+combine
+remingtn - chevy bb2
+slamvan - chevy mb2
+blade - chevy mb1
+clover - chevy bb1
+hustler - ford sb2
+tampa - dodge bb1
+windsor - dodge bb1
+savanna - chevy mb1
+broadway - chevy mb2
+tornado - chevy sb2
+stafford - ford sb2
+picador - chevy bb1
+phoenix - chevy bb2
+stallion - ford mb1
+buffalo - chevy mb3
+
+ford sb1 sb2 mb1
+chevy sb1 sb2 mb1 mb2 mb3 bb1 bb2
+dodge mb1 bb1

@@ -53,6 +53,7 @@
 	<file src="audio/v8burble.wav" type="client" />
 	<file src="audio/v8slow.ogg" type="client" />
 	<file src="audio/v8slow2.ogg" type="client" />
+	<file src="audio/v8slow3.wav" type="client" />
 	<file src="audio/v8u2.ogg" type="client" />
 	<file src="audio/v8u.ogg" type="client" />
 	<file src="audio/v8truck.ogg" type="client" />
@@ -60,6 +61,13 @@
 	<file src="audio/v8old2.wav" type="client" />
 	<file src="audio/v8old3.wav" type="client" />
 	<file src="audio/v8old4.wav" type="client" />
+	<file src="audio/v8old5.ogg" type="client" />
+	<file src="audio/v8old6.ogg" type="client" />
+	<file src="audio/v8old7.wav" type="client" />
+	<file src="audio/v8old8.ogg" type="client" />
+	<file src="audio/v8old9.wav" type="client" />
+	<file src="audio/CAR_35_ENG_MB_SPU_06.wav" type="client" />
+	<file src="audio/CAR_38_ENG_MB_EE_07.wav" type="client" />
 	<file src="audio/v8ferrari.wav" type="client" />
 	<file src="audio/v12old.ogg" type="client" />
 	<file src="audio/v12race.wav" type="client" />
