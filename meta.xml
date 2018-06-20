@@ -66,8 +66,8 @@
 	<file src="audio/v8old7.wav" type="client" />
 	<file src="audio/v8old8.ogg" type="client" />
 	<file src="audio/v8old9.wav" type="client" />
-	<file src="audio/CAR_35_ENG_MB_SPU_06.wav" type="client" />
-	<file src="audio/CAR_38_ENG_MB_EE_07.wav" type="client" />
+	<file src="audio/v8old10.wav" type="client" />
+	<file src="audio/v8old11.wav" type="client" />
 	<file src="audio/v8ferrari.wav" type="client" />
 	<file src="audio/v12old.ogg" type="client" />
 	<file src="audio/v12race.wav" type="client" />

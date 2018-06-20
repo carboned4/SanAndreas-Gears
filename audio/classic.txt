@@ -27,6 +27,20 @@ phoenix - chevy bb2
 stallion - ford mb1
 buffalo - chevy mb3
 
-ford sb1 sb2 mb1
-chevy sb1 sb2 mb1 mb2 mb3 bb1 bb2
-dodge mb1 bb1
+ford
+	sb1 - v8old6
+	https://www.youtube.com/watch?v=UuNgtvm0xl0
+	sb2 - v8old6
+	mb1 - v8u
+chevy
+	sb1 - v8old4
+	sb2 - v8old4
+	mb1 - v8old2
+	mb2 - v8old6
+	mb3
+	bb1 - v8old10
+	bb2 - v8old10
+dodge
+	mb1 - v8old5
+	https://www.youtube.com/watch?v=Bd1pv-RD1Ms
+	bb1 - v8old7

@@ -511,7 +511,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="419" name="esperant" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="419" name="esperant" type="car" soundname="v8old10.wav" revlimit="5500" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="60"/>
@@ -943,7 +943,7 @@
 			<inertia gear="10" value="600"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="434" name="hotknife" type="car" soundname="v8old3.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="1" turboboostfactor="0" turbolevel="1" exhaustnumber="2">
+	<vehicle id="434" name="hotknife" type="car" soundname="v8old6.ogg" revlimit="5000" soundbase="2000" soundvolume="0.25" numbergears="4" hasturbo="0" hasbackfire="1" turboboostfactor="0" turbolevel="1" exhaustnumber="2">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -1082,7 +1082,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="439" name="stallion" type="car" soundname="v8u.ogg" revlimit="5000" soundbase="5500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="439" name="stallion" type="car" soundname="v8u.ogg" revlimit="5000" soundbase="6500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -1658,7 +1658,7 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="463" name="freeway" type="bike" soundname="v8slow.ogg" revlimit="6000" soundbase="2500" soundvolume="0.2" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="463" name="freeway" type="bike" soundname="v8old6.ogg" revlimit="5000" soundbase="2000" soundvolume="0.25" numbergears="5" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="80"/>
 			<speed gear="1" value="80"/>
@@ -1736,7 +1736,7 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="466" name="glendale" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="466" name="glendale" type="car" soundname="v8old5.ogg" revlimit="5000" soundbase="2000" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="60"/>
@@ -1759,7 +1759,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="467" name="oceanic" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="467" name="oceanic" type="car" soundname="v8old5.ogg" revlimit="5000" soundbase="2000" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="60"/>
@@ -1911,7 +1911,7 @@
 			<inertia gear="1" value="10"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="474" name="hermes" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="474" name="hermes" type="car" soundname="v8old6.ogg" revlimit="5000" soundbase="2000" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="60"/>
@@ -1934,7 +1934,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="475" name="sabre" type="car" soundname="CAR_35_ENG_MB_SPU_06.wav" revlimit="5000" soundbase="2500" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="475" name="sabre" type="car" soundname="v8old10.wav" revlimit="5500" soundbase="2500" soundvolume="0.25" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -2643,7 +2643,7 @@
 			<inertia gear="7" value="400"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="504" name="bloodra" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="504" name="bloodra" type="car" soundname="v8old5.ogg" revlimit="5000" soundbase="2000" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -3288,32 +3288,22 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="528" name="fbitruck" type="car" soundname="truck.ogg" revlimit="3000" soundbase="750" soundvolume="0.10" numbergears="10" hasturbo="1" hasbackfire="0" turboboostfactor="3" turbolevel="1" exhaustnumber="1">
+	<vehicle id="528" name="fbitruck" type="car" soundname="i6skyline3.ogg" revlimit="8000" soundbase="2750" soundvolume="0.3" numbergears="5" hasturbo="1" hasbackfire="0" turboboostfactor="0.75" turbolevel="3" exhaustnumber="2">
 		<speeds>
 			<speed gear="0" value="80"/>
-			<speed gear="1" value="20"/>
-			<speed gear="2" value="30"/>
-			<speed gear="3" value="45"/>
-			<speed gear="4" value="60"/>
-			<speed gear="5" value="75"/>
-			<speed gear="6" value="90"/>
-			<speed gear="7" value="110"/>
-			<speed gear="8" value="140"/>
-			<speed gear="9" value="170"/>
-			<speed gear="10" value="200"/>
+			<speed gear="1" value="60"/>
+			<speed gear="2" value="100"/>
+			<speed gear="3" value="150"/>
+			<speed gear="4" value="200"/>
+			<speed gear="5" value="280"/>
 		</speeds>
 		<accelerations>
 			<acceleration gear="0" value="0"/>
-			<acceleration gear="1" value="40"/>
-			<acceleration gear="2" value="20"/>
-			<acceleration gear="3" value="16"/>
-			<acceleration gear="4" value="17"/>
-			<acceleration gear="5" value="9"/>
-			<acceleration gear="6" value="6"/>
-			<acceleration gear="7" value="5"/>
-			<acceleration gear="8" value="4"/>
-			<acceleration gear="9" value="3"/>
-			<acceleration gear="10" value="2.5"/>
+			<acceleration gear="1" value="53"/>
+			<acceleration gear="2" value="27"/>
+			<acceleration gear="3" value="15"/>
+			<acceleration gear="4" value="12"/>
+			<acceleration gear="5" value="10"/>
 		</accelerations>
 		<inertias>
 			<inertia gear="0" value="5"/>
@@ -3322,11 +3312,6 @@
 			<inertia gear="3" value="180"/>
 			<inertia gear="4" value="210"/>
 			<inertia gear="5" value="250"/>
-			<inertia gear="6" value="300"/>
-			<inertia gear="7" value="360"/>
-			<inertia gear="8" value="430"/>
-			<inertia gear="9" value="510"/>
-			<inertia gear="10" value="600"/>
 		</inertias>
 	</vehicle>
 	<vehicle id="529" name="willard" type="car" soundname="v6slow2.ogg" revlimit="6000" soundbase="1750" soundvolume="0.12" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
@@ -3444,7 +3429,7 @@
 			<inertia gear="4" value="210"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="534" name="remingtn" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.10" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="534" name="remingtn" type="car" soundname="v8old10.wav" revlimit="5500" soundbase="2500" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -3467,7 +3452,7 @@
 			<inertia gear="4" value="210"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="535" name="slamvan" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.10" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="535" name="slamvan" type="car" soundname="v8old6.ogg" revlimit="5000" soundbase="2000" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -3640,7 +3625,7 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="542" name="clover" type="car" soundname="CAR_38_ENG_MB_EE_07.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="542" name="clover" type="car" soundname="v8old10.wav" revlimit="5500" soundbase="2500" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -3727,7 +3712,7 @@
 			<inertia gear="10" value="600"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="545" name="hustler" type="car" soundname="v8old3.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="545" name="hustler" type="car" soundname="v8old6.ogg" revlimit="5000" soundbase="2000" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -3825,7 +3810,7 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="549" name="tampa" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="549" name="tampa" type="car" soundname="v8old7.wav" revlimit="5500" soundbase="2500" soundvolume="0.25" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -3966,7 +3951,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="555" name="windsor" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="555" name="windsor" type="car" soundname="v8old7.wav" revlimit="5500" soundbase="2500" soundvolume="0.25" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -4269,7 +4254,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="567" name="savanna" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="567" name="savanna" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -4474,7 +4459,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="575" name="broadway" type="car" soundname="v8old4.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="575" name="broadway" type="car" soundname="v8old6.ogg" revlimit="5000" soundbase="2000" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="60"/>
@@ -4610,7 +4595,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="580" name="stafford" type="car" soundname="v8old3.wav" revlimit="5000" soundbase="4000" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="580" name="stafford" type="car" soundname="v8old6.ogg" revlimit="5000" soundbase="2000" soundvolume="0.2" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="60"/>
@@ -5094,7 +5079,7 @@
 			<inertia gear="4" value="150"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="600" name="picador" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="600" name="picador" type="car" soundname="v8old10.wav" revlimit="5500" soundbase="2500" soundvolume="0.25" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
@@ -5184,7 +5169,7 @@
 			<inertia gear="5" value="250"/>
 		</inertias>
 	</vehicle>
-	<vehicle id="603" name="phoenix" type="car" soundname="v8old2.wav" revlimit="5000" soundbase="2500" soundvolume="0.15" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
+	<vehicle id="603" name="phoenix" type="car" soundname="v8old7.wav" revlimit="5500" soundbase="2500" soundvolume="0.25" numbergears="4" hasturbo="0" hasbackfire="0" turboboostfactor="0" turbolevel="1" exhaustnumber="1">
 		<speeds>
 			<speed gear="0" value="70"/>
 			<speed gear="1" value="70"/>
